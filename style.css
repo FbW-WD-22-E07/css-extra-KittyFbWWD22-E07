@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --nav-height: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(12px + 0.5vw);
+}
+
+body {
+  margin-top: 5vw;
+}
+
+main {
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100vw;
+  height: var(--nav-height);
+  background-color: hsl(240, 100%, 25%);
+  position: fixed;
+  top: 0px;
+}
+
+nav a {
+  color: antiquewhite;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  width: calc(100% / 4);
+}
+
+nav a:hover {
+  background-color: hsl(240, 100%, 35%);
+}
+
+header,
+h1,
+.doc-section {
+  margin-bottom: 40px;
+  padding-top: calc(var(--nav-height) + 1vh);
+}
+
+h2,
+p {
+  margin: 20px 0px;
+}
